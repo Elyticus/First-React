@@ -1,0 +1,86 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background: #f55a5a;
+}
+
+a {
+  color: #918e9b;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.navbar--logo {
+  width: 24px;
+}
+
+.card {
+  display: flex;
+}
+
+.hero--map {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.hero--content {
+  margin-left: 1em;
+}
+
+.travel--image {
+  height: 320px;
+  border-radius: 5px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.card-component {
+  margin: 1em;
+}
+
+.displaySection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31.25em, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.fa-location-dot {
+  color: #f55a5a;
+}
+
+.card--date {
+  color: #2b283a;
+  font-family: Inter;
+  font-size: 13.24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card--description {
+  color: #2b283a;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 15.36px */
+}
+
+@media all and (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid grey;
+  }
+
+  .displaySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
